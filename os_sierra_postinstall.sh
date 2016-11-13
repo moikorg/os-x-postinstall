@@ -19,7 +19,7 @@ function homebrew_install {
 }
 
 function homebrew_base_packages {
-  brew install bash bash-completion ruby python openssl tree wget
+  brew install bash bash-completion ruby python3 openssl tree wget 
 }
 
 function homebrew_post_install {
@@ -70,7 +70,8 @@ function cask_base_packages {
     vagrant \
     virtualbox \
     vmware-fusion \
-    vlc
+    vlc \
+    curl
 }
 
 function mas_install {
