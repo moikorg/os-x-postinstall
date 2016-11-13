@@ -5,7 +5,7 @@
 # ------------------------------------------------
 #
 
-DEVICE_NAME=""
+DEVICE_NAME="iMac"
 WDIR=$(pwd)
 
 
@@ -42,6 +42,7 @@ function cask_install {
 
 function cask_base_packages {
   # Install base cask packages
+  echo "installing via cask"
   brew cask install \
   atom \
   flux \
