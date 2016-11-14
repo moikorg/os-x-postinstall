@@ -54,7 +54,7 @@ function cask_base_packages {
     gimp \
     git \
     hipchat \
-    iterm \
+    iterm2 \
     keepassx \
     little-snitch \
     owncloud \
@@ -69,8 +69,7 @@ function cask_base_packages {
     vagrant \
     virtualbox \
     vmware-fusion \
-    vlc \
-    curl
+    vlc
 }
 
 function mas_install {
@@ -84,15 +83,15 @@ function mas_base_packages {
   mas install 918858936   #Airmail
   mas install 405843582   #Alfred
   mas install 408981426   #Aperture
-  mas install 535436797   #Arduino
+#  mas install 535436797   #Arduino
   mas install 1055511498  #Day One
   mas install 406056744   #Evernote
-  mas install 1111570163  #GrandPerspective
+#  mas install 1111570163  #GrandPerspective
   mas install 446366603   #ifolor Designer
-  mas install 405399194   #Kindle
+#  mas install 405399194   #Kindle
   mas install 973213640   #MSG Viewer for Outlook
-  mas install 1142578753  #OmniGraffle
-  mas install 534553406   #Skim
+#  mas install 1142578753  #OmniGraffle
+#  mas install 534553406   #Skim
   mas install 425955336   #Skitch
   mas install 423368786   #Systemmonitor
   mas install 485812721   #TweetDeck
@@ -159,3 +158,5 @@ cask_base_packages
 
 mas_install
 mas_base_packages
+
+configure_host
