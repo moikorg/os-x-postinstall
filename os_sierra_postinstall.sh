@@ -48,7 +48,6 @@ function cask_base_packages {
     google-chrome \
     spotify \
     beyond-compare \
-    chrome \
     docker \
     dropbox \
     fugu \
