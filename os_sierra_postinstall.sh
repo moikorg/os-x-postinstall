@@ -19,7 +19,7 @@ function homebrew_install {
 }
 
 function homebrew_base_packages {
-  brew install bash bash-completion ruby python3 openssl tree wget 
+  brew install bash bash-completion ruby python3 openssl tree wget git
 }
 
 function homebrew_post_install {
@@ -41,35 +41,10 @@ function cask_install {
 }
 
 function cask_base_packages {
+	echo "Installing packages through brew cask"
   # Install base cask packages
-  brew cask install \
-    atom \
-    flux \
-    google-chrome \
-    spotify \
-    beyond-compare \
-    docker \
-    dropbox \
-    fugu \
-    gimp \
-    git \
-    hipchat \
-    iterm2 \
-    keepassx \
-    little-snitch \
-    owncloud \
-    path-finder \
-    postman \
-    pycharm \
-    skype-for-business \
-    sonos \
-    sourcetree \
-    spotify \
-    sublime-text \
-    vagrant \
-    virtualbox \
-    vmware-fusion \
-    vlc
+  brew cask install flux google-chrome spotify beyond-compare docker fugu gimp git hipchat iterm2 keepassx
+  brew cask install bartender little-snitch nextcloud path-finder postman pycharm sonos sourcetree vagrant virtualbox
 }
 
 function mas_install {
@@ -84,23 +59,23 @@ function mas_base_packages {
   mas install 405843582   #Alfred
   mas install 408981426   #Aperture
 #  mas install 535436797   #Arduino
-  mas install 1055511498  #Day One
+#  mas install 1055511498  #Day One
   mas install 406056744   #Evernote
 #  mas install 1111570163  #GrandPerspective
   mas install 446366603   #ifolor Designer
 #  mas install 405399194   #Kindle
-  mas install 973213640   #MSG Viewer for Outlook
+#  mas install 973213640   #MSG Viewer for Outlook
 #  mas install 1142578753  #OmniGraffle
 #  mas install 534553406   #Skim
-  mas install 425955336   #Skitch
+#  mas install 425955336   #Skitch
   mas install 423368786   #Systemmonitor
   mas install 485812721   #TweetDeck
   mas install 411680127   #Wifi Scanner
   mas install 525912054   #Wifi Signal
-  mas install 784801555   #OneNote
-  mas install 409789998   #Twitter
+#  mas install 784801555   #OneNote
+#  mas install 409789998   #Twitter
   mas install 425424353   #The Unarchiver
-  mas install 568494494   #Pocket
+#  mas install 568494494   #Pocket
 }
 
 function install_font {
@@ -148,6 +123,8 @@ function configure_terminal {
 
 # main programm		  
 echo "Starting the install"
+echo "Xcode should be installed"
+homebrew_install
 homebrew_base_packages
 homebrew_post_install
 
@@ -159,4 +136,4 @@ cask_base_packages
 mas_install
 mas_base_packages
 
-configure_host
+#configure_host
