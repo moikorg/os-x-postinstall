@@ -4,7 +4,7 @@ TODO: Write a project description
 Checkout the code locally and run it
 ### Prerequisities
 ```
-OSX Sierra 10.12 (tested)
+OSX (at least Sierra)
 ```
 ## Usage
 Review the code (make sure it does what you're expecting
