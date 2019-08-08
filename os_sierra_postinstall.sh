@@ -1,11 +1,11 @@
 #!/bin/bash
 # ------------------------------------------------
-# OS X Sierra Postinstallation and customisation
-# Sep 2016
+# OS X Postinstallation and customisation
+# August 2019
 # ------------------------------------------------
 #
 
-DEVICE_NAME="iMac"
+DEVICE_NAME="xyz"
 WDIR=$(pwd)
 
 
@@ -43,7 +43,7 @@ function cask_install {
 function cask_base_packages {
 	echo "Installing packages through brew cask"
   # Install base cask packages
-  brew cask install flux google-chrome spotify beyond-compare docker fugu gimp git hipchat iterm2 keepassx
+  brew cask install google-chrome spotify beyond-compare docker git iterm2 dashlane dbvisualizer 
   brew cask install bartender little-snitch nextcloud path-finder postman pycharm sonos sourcetree vagrant virtualbox
 }
 
@@ -57,21 +57,21 @@ function mas_base_packages {
   mas install 775737590   #iA Writer
   mas install 918858936   #Airmail
   mas install 405843582   #Alfred
-  mas install 408981426   #Aperture
+#  mas install 408981426   #Aperture
 #  mas install 535436797   #Arduino
 #  mas install 1055511498  #Day One
   mas install 406056744   #Evernote
 #  mas install 1111570163  #GrandPerspective
-  mas install 446366603   #ifolor Designer
+#  mas install 446366603   #ifolor Designer
 #  mas install 405399194   #Kindle
 #  mas install 973213640   #MSG Viewer for Outlook
 #  mas install 1142578753  #OmniGraffle
 #  mas install 534553406   #Skim
 #  mas install 425955336   #Skitch
-  mas install 423368786   #Systemmonitor
+#  mas install 423368786   #Systemmonitor
   mas install 485812721   #TweetDeck
-  mas install 411680127   #Wifi Scanner
-  mas install 525912054   #Wifi Signal
+#  mas install 411680127   #Wifi Scanner
+#  mas install 525912054   #Wifi Signal
 #  mas install 784801555   #OneNote
 #  mas install 409789998   #Twitter
   mas install 425424353   #The Unarchiver
