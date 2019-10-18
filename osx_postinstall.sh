@@ -44,7 +44,7 @@ function cask_base_packages {
 	echo "Installing packages through brew cask"
   # Install base cask packages
   brew cask install google-chrome spotify beyond-compare docker iterm2 dashlane dbvisualizer 
-  brew cask install bartender little-snitch nextcloud path-finder pycharm sourcetree 
+  brew cask install bartender little-snitch nextcloud path-finder pycharm sourcetree vmware-fusion bettertouchtoolx
 }
 
 function mas_install {
@@ -56,7 +56,7 @@ function mas_base_packages {
   # Install App from the Apple AppStore
   mas install 775737590   #iA Writer
   mas install 918858936   #Airmail
-  mas install 405843582   #Alfred
+#  mas install 405843582   #Alfred. --> old version
 #  mas install 408981426   #Aperture
 #  mas install 535436797   #Arduino
 #  mas install 1055511498  #Day One
