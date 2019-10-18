@@ -43,7 +43,7 @@ function cask_install {
 function cask_base_packages {
 	echo "Installing packages through brew cask"
   # Install base cask packages
-  brew cask install google-chrome spotify beyond-compare docker git iterm2 dashlane dbvisualizer 
+  brew cask install google-chrome spotify beyond-compare docker iterm2 dashlane dbvisualizer 
   brew cask install bartender little-snitch nextcloud path-finder pycharm sonos sourcetree 
 }
 
