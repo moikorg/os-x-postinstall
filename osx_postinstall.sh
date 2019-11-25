@@ -45,7 +45,7 @@ function cask_base_packages {
   # Install base cask packages
   brew cask install google-chrome spotify beyond-compare docker iterm2 dashlane dbvisualizer 
   brew cask install bartender little-snitch nextcloud path-finder pycharm sourcetree vmware-fusion bettertouchtoolx
-  brew cask install wireshark
+  brew cask install cyberduck wireshark
 }
 
 function mas_install {
