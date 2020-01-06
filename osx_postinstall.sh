@@ -1,11 +1,11 @@
 #!/bin/bash
 # ------------------------------------------------
 # OS X Postinstallation and customisation
-# August 2019
+# January 2020
 # ------------------------------------------------
 #
 
-DEVICE_NAME="xyz"
+DEVICE_NAME="MBPtouch"
 WDIR=$(pwd)
 
 
@@ -19,7 +19,7 @@ function homebrew_install {
 }
 
 function homebrew_base_packages {
-  brew install bash bash-completion ruby python3 openssl tree wget git
+  brew install bash bash-completion ruby python3 openssl tree wget git a2ps
 }
 
 function homebrew_post_install {
@@ -45,8 +45,13 @@ function cask_base_packages {
   # Install base cask packages
   brew cask install google-chrome spotify beyond-compare docker iterm2 dashlane dbvisualizer 
   brew cask install bartender little-snitch nextcloud path-finder pycharm sourcetree vmware-fusion bettertouchtool
-  brew cask install cyberduck wireshark kindle
+  brew cask install cyberduck kindle
 }
+
+function pip_install {
+  pip3 install virtualenv virtualenvwrapper
+}
+
 
 function mas_install {
   # Install MAS (Mac AppStore) command line tool
@@ -125,16 +130,21 @@ function configure_terminal {
 # main programm		  
 echo "Starting the install"
 echo "Xcode should be installed"
-homebrew_install
+#homebrew_install
 homebrew_base_packages
-homebrew_post_install
+#homebrew_post_install
 
-gatekeeper
+#gatekeeper
 
 cask_install
 cask_base_packages
+
+pip_install
 
 mas_install
 mas_base_packages
 
 #configure_host
+configure_finder_desktop
+
+
